@@ -1,5 +1,5 @@
-from .ai_cnn import ModelCNN
+from .cnn import CNN
 from .rcnn import RCNN
 
 
-__all__ = ["ModelCNN", "RCNN"]
+__all__ = ["CNN", "RCNN"]

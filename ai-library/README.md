@@ -11,7 +11,7 @@ Die Bibliothek ist wie folgt strukturiert:
 
 - **ai_library/**: Hauptpaket der Bibliothek.
   - **models/**: Enthält verschiedene AI-Modelle.
-    - **ai_cnn.py**: Definiert das `ModelCNN`-Modell.
+    - **cnn.py**: Definiert das `CNN`-Modell.
     - **rcnn.py**: Definiert das `RCNN`-Modell.
   - **data_processing/**: Enthält Funktionen zur Datenverarbeitung.
     - **preprocessing.py**: Enthält Funktionen zur Datenvorverarbeitung wie `normalize_data` und `remove_outliers`.
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 Um die Modelle und Datenverarbeitungsfunktionen zu verwenden, importieren Sie die entsprechenden Module:
 
 ```python
-from ai_library.models.ai_cnn import ModelCNN
+from ai_library.models.cnn import CNN
 from ai_library.models.rcnn import RCNN
 from ai_library.data_processing.preprocessing import normalize_data
 from ai_library.data_processing.augmentation import add_noise

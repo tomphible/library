@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from torchvision import transforms
 from ai_library.base_model import BaseModel
 
-class ModelCNN(BaseModel):
+class CNN(BaseModel):
     def __init__(self, num_classes=10):
         """
         Erstellt ein CNN für Bildklassifikation mit PyTorch.
