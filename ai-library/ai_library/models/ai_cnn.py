@@ -64,8 +64,6 @@ class ModelCNN(BaseModel):
             total = 0
             for images, labels in dataloader:
                 self.optimizer.zero_grad()
-                images = images.float()
-                labels = labels.float()
                 outputs = self.model(images)
                 loss = self.criterion(outputs, labels)
                 loss.backward()

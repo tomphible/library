@@ -20,7 +20,7 @@ def make_predictions(model, input_size):
     X_test = torch.rand(10, 3, input_size, input_size)  # 10 new images
     predictions = model.predict(X_test)
     print(f"Predictions from {model.__class__.__name__}:", predictions)
-    show_image_with_prediction(X_test[0], predictions)
+    show_image_with_prediction(X_test[0], prediction)
 
 def show_image_with_prediction(image, prediction):
     plt.imshow(image.permute(1, 2, 0))  # Convert from (C, H, W) to (H, W, C)
@@ -36,6 +36,7 @@ def main():
     # Train and evaluate RCNN model
     rcnn_model = train_model(RCNN, 224)
     make_predictions(rcnn_model, 224)
+
 
 if __name__ == "__main__":
     main()
